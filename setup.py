@@ -12,14 +12,16 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='sample',
+    name='easyds',
     version='0.1.0',
-    description='Sample package for Python-Guide.org',
+    description='Easy way for data science',
     long_description=readme,
-    author='Kenneth Reitz',
-    author_email='me@kennethreitz.com',
-    url='https://github.com/kennethreitz/samplemod',
+    author='Yusuke Takeuchi',
+    author_email='take.yusuke@gmail.com',
+    install_requires=['numpy', 'pandas', 'cv2', 'matplotlib'],
+    url='https://github.com/yusuke/easy-ds',
     license=license,
-    packages=find_packages(exclude=('tests', 'docs'))
+    packages=find_packages(exclude=('tests', 'docs')),
+    test_suite='tests'
 )
 
